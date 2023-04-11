@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Mascota;
+use \App\Mascota;
 
 class MascotaController extends Controller
 {
@@ -20,7 +20,15 @@ class MascotaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $mascota=new Mascota();
+        $mascota->mascotas_id=$request->get('mascotas_id');
+        $mascota->nombre=$request->get('nombre');
+        $mascota->edad=$request->get('edad');
+        $mascota->peso=$request->get('peso');
+        $mascota->genero=$request->get('genero');
+
+        $mascota->save();
+
     }
 
     /**
@@ -28,7 +36,7 @@ class MascotaController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return $mascota=Mascota::find($id);
     }
 
     /**
@@ -36,7 +44,14 @@ class MascotaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $mascota=Mascota::find($id);
+
+        $mascota->nombre=$request->get('nombre');
+        $mascota->edad=$request->get('edad');
+        $mascota->peso=$request->get('peso');
+        $mascota->genero=$request->get('genero');
+
+        $mascota->update();
     }
 
     /**
@@ -44,6 +59,7 @@ class MascotaController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $mascota=Mascota::find($id);
+        $mascota->destroy();
     }
 }
