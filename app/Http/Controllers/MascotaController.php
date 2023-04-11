@@ -60,6 +60,6 @@ class MascotaController extends Controller
     public function destroy(string $id)
     {
         $mascota=Mascota::find($id);
-        $mascota->destroy();
+        $mascota->delete();
     }
 }
