@@ -12,7 +12,7 @@ class MascotaController extends Controller
      */
     public function index()
     {
-      return $mascotas=\App\Models\Mascota::all();
+        return $mascotas=Mascota::all();
     }
 
     /**

@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::apiResource('apiMascota', 'MascotaController');
+Route::apiResource('apiMascota','MascotaController');
