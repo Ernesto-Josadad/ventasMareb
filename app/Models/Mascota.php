@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mascota extends Model
 {
-    use HasFactory;
+    protected $table='Mascotas';
+    protected $primaryKey='id_mascota';
+
+    public $incrementing=false;
+
 }
