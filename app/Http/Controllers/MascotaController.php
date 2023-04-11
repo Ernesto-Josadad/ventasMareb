@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Mascota;
 
 class MascotaController extends Controller
 {
@@ -11,7 +12,7 @@ class MascotaController extends Controller
      */
     public function index()
     {
-        //
+      return $mascotas=\App\Models\Mascota::all();
     }
 
     /**
