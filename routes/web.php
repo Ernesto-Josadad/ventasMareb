@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('vue','pruebaVue');
+
 Route::apiResource('apiMascota','MascotaController');

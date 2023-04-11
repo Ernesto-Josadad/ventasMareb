@@ -9,6 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('titulo')</title>
 
+  <script src="{{ asset('js/vue.js') }}" type="text/javascript"></script>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="css/all.min.css">
   <!-- Theme style -->
