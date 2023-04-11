@@ -11,5 +11,6 @@ class Mascota extends Model
     protected $primaryKey='id_mascota';
 
     public $incrementing=true;
+    public $timestamps=true;
 
 }
