@@ -10,6 +10,6 @@ class Mascota extends Model
     protected $table='Mascotas';
     protected $primaryKey='id_mascota';
 
-    public $incrementing=false;
+    public $incrementing=true;
 
 }
