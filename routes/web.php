@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::view('vue','pruebaVue');
+Route::apiResource('apiProducto','ProductoController');
 
 Route::apiResource('apiMascota','MascotaController');
