@@ -12,5 +12,12 @@ class Mascota extends Model
 
     public $incrementing=true;
     public $timestamps=true;
+    public $fillable=[
+      'mascotas_id',
+      'nombre',
+      'edad',
+      'peso',
+      'genero'
+    ];
 
 }
