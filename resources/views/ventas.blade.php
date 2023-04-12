@@ -9,4 +9,4 @@
 <script type="text/javascript" src="js/apis/apiMascota.js"></script>
 @endpush
 
-<input type="hidden" name="route" value="{{ url(/) }}">
+

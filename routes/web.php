@@ -19,6 +19,9 @@ Route::get('/', function () {
 
 Route::view('vue','pruebaVue');
 Route::apiResource('apiProducto','ProductoController');
-Route::view('ventas','ventas/');
+Route::view('ventas','ventas');
+Route::get('prueba',function(){
+ return 'HOLA';
+});
 
 Route::apiResource('apiMascota','MascotaController');
