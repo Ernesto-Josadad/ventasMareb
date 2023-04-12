@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('titulo','VENTAS')
+@section('titulo','Interface de ventas')
 @section('contenido')
 
 @endsection
