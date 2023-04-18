@@ -6,9 +6,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <input type="text" placeholder="Escriba el código del producto"
-                class="form-control">
-                <button class="btn-primary">Buscar</button>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Código del producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                  </div>
             </div>
         </div>
     </div>
