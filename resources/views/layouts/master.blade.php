@@ -14,6 +14,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="css/adminlte.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -277,6 +278,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="js/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap 5 -->
+<script src="js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="js/adminlte.min.js"></script>
 </body>
