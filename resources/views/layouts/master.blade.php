@@ -173,7 +173,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <img src="dist/img/fotoPerfil.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Ebling Alejandrina Canto Pastrana</a>
+          <a href="#" class="d-block">Ebling Alejandrina <br> Canto Pastrana</a>
         </div>
       </div>
 
@@ -204,9 +204,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="productos" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inicio</p>
+                </a>
+                <a href="admin" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Administración de productos</p>
                 </a>
               </li>
             </ul>
@@ -225,7 +229,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Menú</h1>
+            <h1 class="m-0">@yield('tituloPagina')</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
