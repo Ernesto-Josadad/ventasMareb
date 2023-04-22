@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
-ProductController
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('products')
+// Route::resource('products');
 Route::apiResource('apiProducto','ProductoController');
 Route::view('productos','ventas');
 Route::view('admin','administracionVentas');
