@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
+ProductController
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('vue','pruebaVue');
+Route::resource('products')
 Route::apiResource('apiProducto','ProductoController');
-Route::view('ventas','ventas');
+Route::view('productos','ventas');
+Route::view('admin','administracionVentas');
 Route::get('prueba',function(){
  return 'HOLA';
 });
